@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: black;
+}
+/* .preloader .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font: 14px arial;
+} */
+#page-loader {
+  position:fixed !important;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:999999;
+  background: #303030 url("http://3.bp.blogspot.com/-sW166HTPK4U/UY2kVNdjsFI/AAAAAAAAEHk/fIO-B-mOeCE/s200/load6.gif") no-repeat 50% 50%;
+  padding:1em 1.2em;
+  display:none
+  }
+h2{
+    position: relative;
+    margin-top: 10%;
+    margin-left:10%;
+    font-family: 'Bad Script', cursive;
+    color:transparent;
+    display:flex;
+    font-size: 8vw;
+}
+h2 span{
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+    0%{
+        color:#fff;
+        filter:blur(2px) hue-rotate(0deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff;
+    }
+    30%,70%{
+        color:#fff;
+        filter:blur(2px) hue-rotate(360deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+    }
+    100%{
+        color: transparent;
+        box-shadow: none;
+        filter:blur(2px) hue-rotate(0deg);
+
+    }
+}
+
+
+h3{
+  margin-top: 2%;
+  margin-left:30%;
+  font-family: 'Bad Script', cursive;
+  color:transparent;
+  display:flex;
+  font-size: 8vh;
+}
+h3 span{
+  animation: animate 3s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+  0%{
+      color:#fff;
+      filter:blur(2px) hue-rotate(0deg);
+      text-shadow: 0 0 10px #00b3ff,
+      0 0 20px #00b3ff,
+      0 0 40px #00b3ff,
+      0 0 80px #00b3ff,
+      0 0 120px #00b3ff,
+      0 0 200px #00b3ff,
+      0 0 300px #00b3ff,
+      0 0 400px #00b3ff;
+  }
+  30%,70%{
+      color:#fff;
+      filter:blur(2px) hue-rotate(360deg);
+      text-shadow: 0 0 10px #00b3ff,
+      0 0 20px #00b3ff,
+      0 0 40px #00b3ff,
+      0 0 80px #00b3ff,
+      0 0 120px #00b3ff,
+      0 0 200px #00b3ff,
+  }
+  100%{
+      color: transparent;
+      box-shadow: none;
+      filter:blur(2px) hue-rotate(0deg);
+
+  }
+}
+
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-10 {
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
