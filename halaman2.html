@@ -2,7 +2,7 @@
 <html>
 <script type='text/javascript'>
 //<![CDATA[
-msg = "_Jessica_Sipit";
+msg = "Happy Birthday Sayang  ";
 msg = "" + msg;pos = 0;
 function scrollMSG()
 {document.title = msg.substring(pos, msg.length) + msg.substring(0, pos); pos++;
@@ -14,9 +14,15 @@ scrollMSG();
 
 <meta name="Author" content="Gerard Ferrandez at http://www.dhteumeuleu.com"> 
 <meta http-equiv="imagetoolbar" content="no"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
 <style type="text/css"> 
 	html,body { 
-		overflow-x: hidden; 
+		overflow-x: hidden;
+		overflow-y: hidden; 
+		min-height: 100%;
+
 	} 
 	body { 
 		background:pink;
@@ -48,7 +54,8 @@ scrollMSG();
 		top: 0%; 
 		font-size: 2em; 
 		font-weight: bold; 
-		font-family: Chiller;
+		font-family: 'Bad Script', cursive;
+		font-family: 'Mochiy Pop P One', sans-serif;
 		background: #transparent; 
 		overflow: hidden; 
 		padding: 0.5em; 
@@ -65,6 +72,210 @@ scrollMSG();
 	.hidden { 
 		visibility: hidden; 
 	} 
+
+	section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#DA22FF, #9733EE);
+        clip-path: circle(30% at right 70%);
+    }
+
+    section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#E55D87, #5FC3E4);
+        clip-path: circle(20% at 10% 10%);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 40px 0;
+    }
+
+    .container .card {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.05);
+        margin: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+    }
+
+    .container .card .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+
+    .container .card:hover .content {
+        transform: translateY(-20px);
+    }
+
+    .container .card .content .imgBx {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .container .card .content .imgBx img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container .card .content .contentBx h3 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        margin: 20px 0 10px;
+        line-height: 1.1em;
+    }
+
+    .container .card .content .contentBx h3 span {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: initial;
+    }
+
+    .container .card .sci {
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+    }
+
+    .container .card .sci li {
+        list-style: none;
+        margin: 0 10px;
+        transform: translateY(40px);
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .container .card:hover .sci li {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .container .card .sci li a {
+        color: #fff;
+        font-size: 20px;
+        margin-right: 30px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+	/* ============================================== Candle
+*/
+
+.velas {
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 228px;
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  transform: translateY(-300px);
+  backface-visibility: hidden;
+  animation: in 500ms 6s ease-out forwards;
+}
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+.velas:after {
+  top: 35%;
+  left: 0;
+}
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+*/
+
+.fuego {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+.fuego:nth-child(1) {
+  animation: fuego 2s 6.5s infinite;
+}
+.fuego:nth-child(2) {
+  animation: fuego 1.5s 6.5s infinite;
+}
+.fuego:nth-child(3) {
+  animation: fuego 1s 6.5s infinite;
+}
+.fuego:nth-child(4) {
+  animation: fuego 0.5s 6.5s infinite;
+}
+.fuego:nth-child(5) {
+  animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+
+@keyframes fuego {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+
 </style> 
  <link rel="SHORTCUT ICON" href="http://www.hi5style.com/gr/heart.gif">
 <script type="text/javascript"> 
@@ -320,7 +531,16 @@ onload = function () {
 </head> 
 <body>
 
-<div class="kue" align="right">
+
+<section>
+	<div class="container" >
+	  <div class="velas">
+		<div class="fuego"></div>
+		<div class="fuego"></div>
+		<div class="fuego"></div>
+		<div class="fuego"></div>
+		<div class="fuego"></div>
+	</div>
 	<svg id="cake" version="1.1" x="0px" y="0px" width="200px" height="500px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
 		<path fill="#a88679" d="M173.667-13.94c-49.298,0-102.782,0-147.334,0c-3.999,0-4-16.002,0-16.002
 			c44.697,0,96.586,0,147.334,0C177.667-29.942,177.668-13.94,173.667-13.94z">
@@ -469,27 +689,25 @@ onload = function () {
 		</path>
 		<rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
 	</svg>
-</div>
-
-<!-- <img id="gambar" src="love.png" alt="SIPITKU SAYANG:)" align="right"> -->
-
-<div id="frm"></div> 
+	  <div class="card1">
+		<div id="frm"></div> 
 <form id="mtxform" name="mtxform"> 
 <span id="inputext" class="hidden"> 
-<textarea rows="1000" cols="1000" id="text" name="text">             		HAPPY BIRTHDAY SIPITKU SAYANG
-				<!-- Sayang...maafin botak yaa kalo botak ada salah sama sipit:(
-				Botak lagi lagi bikin sipit kecewa yaa:(
-				Maafin Botak yaa:(
-				Botak ga akan seperti itu lagi ko sayang..
-				Botak Janji..
-				Masalah ini akan botak perbiki ya sayang 
-				dan...
-				akan botak jadiin pelajaran sayang
-				botak gamau sipit marah lagi sama botak:(
-				botak ga akan ngomong doang ko sayang...
-				tapi botak akan jalanin semua janji janjinya botak
-				INTINYA BOTAK SAYANG BANGET SAMA SIPITKU SAYANG:) -->
+<textarea rows="1000" cols="1000" id="text" name="text">             		HAPPY BIRTHDAY Jessica Anastasya Delgarcia
+				Ciee kesayangannya botak hari ini ulang tahun nihh
+				Happy Birthday Kesayanganku yang ke 18 tahun
+				Semoga Panjang umur selaluu..
+				Semoga Dilimpahkan Rezekinya..
+				Menjadi Anak yang Sholeha
+				Selalu jadi Kebanggaan Kedua Orang tua
+				Semoga Menjadi Pribadi yang lebih baik yaa kedepan nya
+				Pokoknya Doa Yang Terbaik Buat Kesayangannya Botak
+				Tetep jadi Jessica Yang Andaka Kenal yaa
+				INTINYA BOTAK SAYANG BANGET SAMA SIPITKU SAYANG:)
+				.
 </textarea>
+	</div>
+</section>
 
 
 <embed allowscriptaccess="never" type="application/x-shockwave-flash" src="http://www.4shared.com/embed/1118846590/5f519b2" width="0" height="0" flashvars="autostart=true"></embed>
